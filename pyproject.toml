@@ -1,0 +1,20 @@
+[tool.black]
+line-length = 120
+exclude = '''
+(
+  /(
+    | \.git
+    | \.venv
+    | cdk\.out
+    | node_modules
+  )/
+)
+'''
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+skip_glob = ['.venv','cdk.out', 'node_modules']
